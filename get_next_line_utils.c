@@ -6,12 +6,11 @@
 /*   By: mcho <mcho@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/11 14:19:23 by mcho              #+#    #+#             */
-/*   Updated: 2021/01/24 04:13:02 by mcho             ###   ########.fr       */
+/*   Updated: 2021/01/25 12:55:21 by mcho             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "get_next_line.h"
-#include <stdio.h>
 
 int			ft_strlen(char *s)
 {
