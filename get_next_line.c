@@ -6,13 +6,10 @@
 /*   By: mcho <zytls92@gmail.com>                   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/24 04:02:46 by mcho              #+#    #+#             */
-/*   Updated: 2021/01/24 04:07:07 by mcho             ###   ########.fr       */
+/*   Updated: 2021/01/25 12:44:44 by mcho             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <fcntl.h>
-#include <unistd.h>
-#include <stdlib.h>
 #include "get_next_line.h"
 
 int					get_line(char **line, char **temp)
@@ -45,7 +42,7 @@ int					get_next_line(int fd, char **line)
 	int				read_size;
 	int				res;
 
-	if (fd < 0 || !line || BUFFER_SIZE < 0)
+	if (fd < 0 || !line || BUFFER_SIZE <= 0)
 		return (-1);
 	if ((buf = (char *)malloc(sizeof(char) * (BUFFER_SIZE + 1))) == NULL)
 		return (-1);
